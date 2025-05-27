@@ -11,7 +11,7 @@
 1. **[웹 서비스 소개](#1-웹-서비스-소개)**
 2. **[기술 스택](#2-기술-스택)**
 3. **[주요 기능](#3-주요-기능)**
-4. **[시스템 아키텍처](#4-시스템-아키텍처)**
+4. **[시스템 아키텍처](#4-시스템-아키텍처--erd)**
 5. **[서비스 화면](#5-서비스-화면)**
 6. **[개발 팀 소개](#6-개발-팀-소개)**
 
@@ -38,7 +38,7 @@ StoryCut과 함께 AI 기반의 스마트한 영상 편집을 경험해보세요
 
 ### **Backend**
 
-<img src="https://img.shields.io/badge/Java 17-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/SpringBoot 3.4.4-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=white"> <img src="https://img.shields.io/badge/FastAPI 0.95.2-009688?style=for-the-badge&logo=FastAPI&logoColor=white"> <img src="https://img.shields.io/badge/Python 3.8-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+<img src="https://img.shields.io/badge/Java 17-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/SpringBoot 3.4.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/FastAPI 0.95.2-009688?style=for-the-badge&logo=FastAPI&logoColor=white"> <img src="https://img.shields.io/badge/Python 3.8-3776AB?style=for-the-badge&logo=Python&logoColor=white">
 
 ### **Database**
 
@@ -64,13 +64,20 @@ StoryCut과 함께 AI 기반의 스마트한 영상 편집을 경험해보세요
 | **자동 자막 생성** | 편집된 영상에 자동으로 자막 삽입 | Whisper |
 
 
-## 4. 시스템 아키텍처
-### 이미지 넣기
+## 4. 시스템 아키텍처 & ERD
+
+### 시스템 아키텍처
+
+![시스템 아키텍처](docs/readme/Architecture.png)
+
+### ERD (Entity Relationship Diagram)
+
+![ERD](docs/readme/erd.png)
 
 ## 5. 서비스 화면
 
 ### 로그인
-| <img src="docs/readme/gif/login.gif" width="200"> |
+| <img src="docs/readme/gif/login.webp" width="200"> |
 |:---:|
 | 로그인 |
 
@@ -82,7 +89,7 @@ StoryCut과 함께 AI 기반의 스마트한 영상 편집을 경험해보세요
 ### 영상 편집 서비스
 
 ### 1. 프롬프트 기반 컷 편집집
-| <img src="docs/readme/gif/prompt.gif" width="200"> |
+| <img src="docs/readme/gif/prompt.webp" width="200"> |
 |:---:|
 | 프롬프트 기반 컷 편집 |
 
@@ -90,22 +97,22 @@ StoryCut과 함께 AI 기반의 스마트한 영상 편집을 경험해보세요
 
 
 ### 1. 영상 모자이크 처리
-| <img src="docs/readme/gif/moza.gif" width="200"> |<img src="docs/readme/gif/Before.gif" width="200"> |<img src="docs/readme/gif/after.gif" width="200"> |
-|:---:|:---: |:---: |
-| 모자이크 처리/ 이미지 | Before | After( 모자이크 / 자막) |
+| <img src="docs/readme/gif/moza.webp" width="200"> |<img src="docs/readme/gif/Before.webp" width="200"> |<img src="docs/readme/gif/after.webp" width="200"> |
+|:-------------------------------------------------:|:---: |:---: |
+|                   모자이크 처리/ 이미지                    | Before | After( 모자이크 / 자막) |
 
 - AI 기반 자동 모자이크 처리
 - 이미지 추가로 제외할 인물 선택
 
 ### 2. 영상 자막 생성
-| <img src="docs/readme/gif/subtitle.gif" width="200"> |
+| <img src="docs/readme/gif/subtitle.webp" width="200"> |
 |:---:|
 | 한국어 자막 추가 |
 
 - AI 기반 한국어 자막 생성
 
 ### 3. 영상 배경 음악 생성
-| <img src="docs/readme/gif/bgm.gif" width="200"> | <img src="docs/readme/gif/prom_sub.gif" width="200"> |
+| <img src="docs/readme/gif/bgm.webp" width="200"> | <img src="docs/readme/gif/prom_sub.webp" width="200"> |
 |:---:|:---:|
 | 자동 생성 | 프롬프트 입력 생성 |
 
@@ -114,7 +121,7 @@ StoryCut과 함께 AI 기반의 스마트한 영상 편집을 경험해보세요
 - 프롬프트 입력으로 특정 음악 요구 가능
 
 ### 4. 영상 편집 알림
-| <img src="docs/readme/gif/push.gif" width="200"> |
+| <img src="docs/readme/gif/push.webp" width="200"> |
 |:---:|
 | 푸쉬 알림 |
 
@@ -124,7 +131,7 @@ StoryCut과 함께 AI 기반의 스마트한 영상 편집을 경험해보세요
 --- 
 
 ### 유튜브 쇼츠 업로드
-| <img src="docs/readme/gif/auth.gif" width="200"> | <img src="docs/readme/gif/y_upload.gif" width="200"> |
+| <img src="docs/readme/gif/auth.webp" width="200"> | <img src="docs/readme/gif/y_upload.webp" width="200"> |
 |:---:|:---:|
 | 업로드 권환 획득득 | 유튜브 쇼츠 업로드 |
 
@@ -135,19 +142,19 @@ StoryCut과 함께 AI 기반의 스마트한 영상 편집을 경험해보세요
 ### 공유 방 서비스
 
 ### 공유 방 관리
-| <img src="docs/readme/gif/create_room.gif" width="200"> | <img src="docs/readme/gif/enter.gif" width="200"> |
+| <img src="docs/readme/gif/create_room.webp" width="200"> | <img src="docs/readme/gif/enter.webp" width="200"> |
 |:---:|:---:|
 | 생성 | 초대 코드로 입장 |
 
 
 ### 공유 방 관리
-| <img src="docs/readme/gif/upload.gif" width="200"> |
+| <img src="docs/readme/gif/upload.webp" width="200"> |
 |:---:|
 | 영상 업로드 |
 
 
 ### 공유 방 관리
-| <img src="docs/readme/gif/read.gif" width="200"> | <img src="docs/readme/gif/search.gif" width="200"> |
+| <img src="docs/readme/gif/read.webp" width="200"> | <img src="docs/readme/gif/search.webp" width="200"> |
 |:---:|:---:|
 | 조회 | 검색 |
 
@@ -177,6 +184,6 @@ StoryCut과 함께 AI 기반의 스마트한 영상 편집을 경험해보세요
 
 ### 4. [ERD](/docs/readme/erd.png)
 
-### 5. [포팅매뉴얼](/exec/포팅메뉴얼/)
+### 5. [포팅매뉴얼](/exec/프로젝트_빌드_및_배포_문서.pdf)
 
-### 6. [최종발표](/exec/월간ZIP_발표.pdf)
+### 6. [최종발표](/exec/최종발표자료.pdf)
